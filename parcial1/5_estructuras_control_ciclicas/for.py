@@ -28,3 +28,5 @@ res = 0
 for contador in range(1, 11):
     res = numero * contador
     print(f"{numero} * {contador} = {res}")
+
+#Comentario de ejemplo
