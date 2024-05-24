@@ -10,6 +10,6 @@ for contador in range(1, 16):
     else:
         if estudiante < 80:
             reprobados += 1
-
+#imprimir
 print(f"El total de aprobados fue: {aprobados} alumnos.")
 print(f"El total de reprobados fue: {reprobados} alumnos.")
