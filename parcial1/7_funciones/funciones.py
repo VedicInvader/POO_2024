@@ -56,8 +56,8 @@ num1 = int(input("Numero 1: "))
 num2 = int(input("Numero 2: "))
 suma(num1, num2)
 
-#Ejemplo 4: sumar dos números
-#Función que recibe parámetros y no regresa valor
+#Ejemplo 5: sumar dos números
+#Función que recibe parámetros y regresa valor
 
 def suma(num1, num2):
     suma = num1 + num2
@@ -67,3 +67,7 @@ num1 = int(input("Numero 1: "))
 num2 = int(input("Numero 2: "))
 resultado_suma = suma(num1, num2)
 print(f"El resultado de la suma es {resultado_suma}")
+
+#Ejemplo 6: crear un programa que solicite a través de una función la siguiente información:
+#Nombre del paciente, edad, estatura, tipo de sangre
+#Utilizar los cuatro tipos de funciones
