@@ -35,3 +35,23 @@ suma()
 
 #Ejemplo 3: sumar dos números
 #Función que no recibe parámetros y regresa valor
+
+def suma():
+    num1 = int(input("Numero 1: "))
+    num2 = int(input("Numero 2: "))
+    suma = num1 + num2
+    return suma
+
+resultado_suma = suma()
+print(f"El resultado es {resultado_suma}")
+
+#Ejemplo 4:
+#Función que recibe parámetros y no regresa valor
+
+def suma(num1, num2):
+    suma = num1 + num2
+    return suma
+
+num1 = int(input("Numero 1: "))
+num2 = int(input("Numero 2: "))
+suma(num1, num2)
