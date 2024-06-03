@@ -1,3 +1,4 @@
+import os 
 # bandera = 1
 
 # while bandera == 1:
@@ -37,6 +38,7 @@
 #         case _:
 #             print("Opcion incorrecta, intente de nuevo.")
 
+
 def solicitarNumeros():
     global n1, n2 #Para hacer globales a las variables locales
     n1 = int(input("Ingrese numero 1: "))
@@ -55,13 +57,9 @@ def operacion(num1, num2, opc):
             return f"El resultado es {mult}"    
         case (4):
             division = num1 / num2
-            return f"El resultado es {division}"            
-        case (5):
-            bandera = False
-            return "Ha terminado."
-        case _:
-            return "Opcion incorrecta, intente de nuevo."
-
+            return f"El resultado es {division}"  
+                 
+os.system("clear")
 bandera = True
 while bandera == True:
     print(""".::      MENU PRINCIPAL      ::. \n
@@ -72,6 +70,9 @@ while bandera == True:
     5.    SALIR
             """)
     oper = int(input("Elige una opcion: "))
-  
-    n1, n2 = solicitarNumeros()
-    print(operacion(n1, n2, oper))  
+    if oper == 5:
+        bandera = False
+        print("Ha terminado.")
+    else:
+        solicitarNumeros()
+        print(operacion(n1, n2, oper))  
