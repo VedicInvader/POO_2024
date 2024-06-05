@@ -1,4 +1,6 @@
 import os 
+from otras_funciones import * #Se pone asterisco para importar todas las funciones del archivo
+
 # bandera = 1
 
 # while bandera == 1:
@@ -39,27 +41,26 @@ import os
 #             print("Opcion incorrecta, intente de nuevo.")
 
 
-def solicitarNumeros():
-    global n1, n2 #Para hacer globales a las variables locales
-    n1 = int(input("Ingrese numero 1: "))
-    n2 = int(input("Ingrese numero 2: "))
+# def solicitarNumeros():
+#     global n1, n2 #Para hacer globales a las variables locales
+#     n1 = int(input("Ingrese numero 1: "))
+#     n2 = int(input("Ingrese numero 2: "))
 
-def operacion(num1, num2, opc):
-    match (opc):
-        case (1):
-            suma = num1 + num2
-            return f"El resultado es {suma}"
-        case (2):
-            resta = num1 - num2
-            return f"El resultado es {resta}"          
-        case (3):
-            mult = num1 * num2
-            return f"El resultado es {mult}"    
-        case (4):
-            division = num1 / num2
-            return f"El resultado es {division}"  
+# def operacion(num1, num2, opc):
+#     match (opc):
+#         case (1):
+#             suma = num1 + num2
+#             return f"El resultado es {suma}"
+#         case (2):
+#             resta = num1 - num2
+#             return f"El resultado es {resta}"          
+#         case (3):
+#             mult = num1 * num2
+#             return f"El resultado es {mult}"    
+#         case (4):
+#             division = num1 / num2
+#             return f"El resultado es {division}"  
                  
-os.system("clear")
 bandera = True
 while bandera == True:
     print(""".::      MENU PRINCIPAL      ::. \n
@@ -74,5 +75,7 @@ while bandera == True:
         bandera = False
         print("Ha terminado.")
     else:
-        solicitarNumeros()
+        n1, n2 = solicitarNumeros()
         print(operacion(n1, n2, oper))  
+        input("Ingrese una tecla para continuar...")
+        os.system("clear")
