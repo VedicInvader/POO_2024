@@ -13,7 +13,7 @@ todos con diferentes calidades y usos.
 
 """
 
-#ejemplo
+#tupl
 
 tupla1 = ("apple", "banana", "cherry")
 print(tupla1)

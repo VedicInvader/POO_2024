@@ -18,6 +18,7 @@ alumnos={
     "duracion":3.8
 }
 
+#ejemplos
 print(alumnos)
 
 print(alumnos["nombre"])
