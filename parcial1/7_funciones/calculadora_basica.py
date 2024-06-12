@@ -68,12 +68,19 @@ while bandera == True:
     2.    RESTA
     3.    MULTIPLICACION
     4.    DIVISION
-    5.    SALIR
+    5.    POTENCIA
+    6.    RAIZ
+    7.    SALIR
             """)
     oper = int(input("Elige una opcion: "))
-    if oper == 5:
+    if oper == 7:
         bandera = False
         print("Ha terminado.")
+    elif oper == 6:
+       n3 = solicitarUnSoloNumero()
+       print(operacion(n3, 0, oper))
+       input("Ingrese una tecla para continuar...")
+       os.system("clear")
     else:
         n1, n2 = solicitarNumeros()
         print(operacion(n1, n2, oper))  

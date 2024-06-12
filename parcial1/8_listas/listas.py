@@ -102,12 +102,15 @@ while bandera == True:
     print("""     .::     MENU DE OPCIONES        ::.     
         1. AGREGAR PELICULAS
         2. REMOVER PELICULAS
-        3. CONSULTAR PELICULAS
-        4. SALIR
+        3. ACTUALIZAR PELICULAS
+        4. CONSULTAR PELICULAS
+        5. BUSCAR PELICULAS
+        6. VACIAR
+        7. SALIR
         """)
     opcion = int(input("Elija una opcion: "))
 
-    if opcion == 4:
+    if opcion == 7:
         bandera = False
         print("Ha terminado la ejecucion del progama.")
     else:
