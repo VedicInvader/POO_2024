@@ -79,3 +79,5 @@ while bandera == True:
         print(operacion(n1, n2, oper))  
         input("Ingrese una tecla para continuar...")
         os.system("clear")
+
+    #

@@ -114,3 +114,5 @@ while bandera == True:
         menu(opcion, peliculas)
         input("Presione una tecla para continuar...")
         os.system("clear")
+    
+    #
