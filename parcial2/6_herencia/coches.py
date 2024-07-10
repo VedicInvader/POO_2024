@@ -114,9 +114,9 @@ class Camiones(Coches):
        self.__capacidadCarga = capacidadCarga
 
     __tipo_carga = 0
-    def cargar(self, tipo_carga):
-       self.tipo_carga = tipo_carga
-       return self.tipo_carga
+    def cargar(self, __tipo_carga):
+       self.__tipo_carga = __tipo_carga
+       return self.__tipo_carga
     
     def getEje(self):
        return self.__eje
