@@ -1,5 +1,4 @@
 import mysql.connector as mysql
-from root import contrasena
 
 #Conectar con la base de datos MySQL
 
@@ -7,7 +6,7 @@ try:
     conexion = mysql.connect(
         host = "localhost",
         user = "root",
-        password = contrasena,
+        password = "",
         database = "bd_python"
     )
 except Exception as excepcion:

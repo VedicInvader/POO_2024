@@ -1,11 +1,10 @@
 import mysql.connector as mysql
-from root import contrasena
 
 try:
     conexion = mysql.connect(
         host = "localhost",
         user = "root",
-        password = contrasena,
+        password = "",
         database = "bd_python"
     )
 except:

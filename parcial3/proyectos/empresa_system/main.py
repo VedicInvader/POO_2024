@@ -1,13 +1,12 @@
 import mysql.connector
 from mysql.connector import Error
-from root import contrasena
 
 def crear_conexion():
     try:
         conexion = mysql.connector.connect(
             host = "localhost",
             user = "root",
-            password = contrasena,
+            password = "",
             database = "mi_empresa"
         )
         if conexion.is_connected():
