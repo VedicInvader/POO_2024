@@ -5,7 +5,7 @@ try:
     conexion=mysql.connector.connect(
         host='localhost',
         user='root',
-        password='',
+        password="",
         database='bd_notas'
     )
     #Crear un objeto de tipo cursor que se pueda reutilizar nuevamente
